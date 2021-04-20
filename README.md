@@ -21,5 +21,11 @@ The arguments for sink() can be:
 * "Console" - print the results on the console  
 
 Examples:  
-\#ETL().source("Simulation").sink("Console").run()
-\#ETL().source("json\data_file_generated.txt").sink("PostgreSQL").run()
+\#ETL().source("Simulation").sink("Console").run()  
+\#ETL().source("json\data_file_generated.txt").sink("PostgreSQL").run()  
+
+File description: 
+There are no dependencies between the files.  
+main.py - the main program
+json_file_generator.py - creates a txt file with random json strings inside
+procedural_code - blueprint for the main program
