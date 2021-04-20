@@ -1,0 +1,22 @@
+ETL-Pseudo:
+Create a rondom generator of json messages and save the messages in dictionary:
+{"key": "A123", "value":"15.6", "ts":'2020-10-07 13:28:43.399620+02:00'}
+ 
+ Q: In what structure should we save the json files? Should we use the key for the dictionary keys also or just put them into a list?
+
+ Simulation source: Generate a new json every few seconds and then...?
+ 
+ Q: Is the value of the 'key field' going to be used in any way for security releated purposes, because we are using PRNG.
+
+ Q: Do we have to save the generated json in some type of a structure (dictionary/list) or we can directly transmit it? Some data lost preventtion mehanisms?
+ Q: Key uniquesness? For the purposes of this project should it be?
+
+Q: Messages should be read in parallel from both sources or one by one?
+
+ random generator which creates a new json and puts in onto the stack every N miliseconds.
+
+ Q: N what number is? How big the stack can we allow to be? 
+
+----------------------------------- ABOUT THE FILE ------------------------------------------
+Check how many lines it has
+json.load the current line
