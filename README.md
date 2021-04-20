@@ -26,6 +26,6 @@ Examples:
 
 File description:  
 There are no dependencies between the files.  
-main.py - the main program
-json_file_generator.py - creates a txt file with random json strings inside
-procedural_code - blueprint for the main program
+_main.py_ - the main program  
+_json_file_generator.py_ - creates a txt file with random json strings inside  
+_procedural_code.py_ - blueprint for the main program  
