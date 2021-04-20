@@ -10,11 +10,9 @@ from psycopg2 import connect, Error
 import sys
 
 def generate_random_json():
-        print(sys.maxsize)
-
         letters = string.ascii_uppercase
-
         json_list = []
+
         for y in range(0, 20):
             key = ""
             for i in range(0, 4):
@@ -37,12 +35,9 @@ def generate_random_json():
             })
 
             json_object = json.dumps(json_list[y])
-
-            # Should we return or call the function
             insert_into_db(json_object)
-            #return json_object
-
             time.sleep(0.250)
+
 
 def read_file():
     json_file = open(r'json-files\data_file_generated.txt', "r")
@@ -51,8 +46,6 @@ def read_file():
 
     for y in range(len(json_list)):
         print(json_list[y])
-        #json_object = json.dumps(json_list[y])
-        #insert_into_db(json_object)
         insert_into_db(json_list[y])
         time.sleep(0.250)
 
@@ -112,9 +105,6 @@ def insert_into_db(json_object):
 def main():
     #read_file()
     generate_random_json()
-    #json_to_parse = generate_random_json()
-    #insert_into_db(json_to_parse)
-
 
 main()
 
