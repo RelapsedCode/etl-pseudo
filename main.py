@@ -119,5 +119,5 @@ class ETL:
             elif self._sink == "Console":
                 print(f"\n".join(temp_list))
 
-
-ETL().source("Simulation").sink("Console").run()
+#ETL().source("Simulation").sink("Console").run()
+ETL().source("json\data_file_generated.txt").sink("PostgreSQL").run()
