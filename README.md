@@ -24,7 +24,7 @@ Examples:
 \#ETL().source("Simulation").sink("Console").run()  
 \#ETL().source("json\data_file_generated.txt").sink("PostgreSQL").run()  
 
-File description: 
+File description:  
 There are no dependencies between the files.  
 main.py - the main program
 json_file_generator.py - creates a txt file with random json strings inside
