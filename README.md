@@ -1,4 +1,4 @@
-# Project overview
+## Project overview:
 Pseudo-etl program which with the following main functions:  
 * generate_random_json - returns a single json containing random (PRNG) key, value, and the current timestamp.  
 * read_from_file - returns list of json strings
@@ -7,7 +7,7 @@ Pseudo-etl program which with the following main functions:
 Fluent user interface is achieved using two functions - source and sink which return the self instance.  
 Run function verifies the string arguments with which source and sink are called and respectively calls the other 3 main functions or / and prints on the console.  
 
-# Configuration
+## Configuration:
 You can call the functions with the following line:  
 ETL().source("Simulation").sink("Console").run()
 
@@ -20,11 +20,11 @@ The arguments for sink() can be:
 * "PostgreSQL" - saves the object to a postgre database
 * "Console" - print the results on the console  
 
-Examples:  
+### Examples:  
 \#ETL().source("Simulation").sink("Console").run()  
 \#ETL().source("json\data_file_generated.txt").sink("PostgreSQL").run()  
 
-File description:  
+### Files description:  
 There are no dependencies between the files.  
 _main.py_ - the main program  
 _json_file_generator.py_ - creates a txt file with random json strings inside  
