@@ -22,7 +22,7 @@ The arguments for sink() can be:
 
 ### Examples:  
 \#ETL().source("Simulation").sink("Console").run()  
-\#ETL().source("json\data_file_generated.txt").sink("PostgreSQL").run()  
+\#ETL().source("json-files\data_file_generated.txt").sink("PostgreSQL").run()  
 
 ### Files description:  
 There are no dependencies between the files.  
